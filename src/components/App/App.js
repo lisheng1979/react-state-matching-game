@@ -22,7 +22,7 @@ class App extends Component{
       previousTileIndex: null,
       toBeCleared: null,
       tiles: createTiles(state.numTiles)
-    })
+    });
   }
   render() {
     return (
