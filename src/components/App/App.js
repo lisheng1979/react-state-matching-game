@@ -32,7 +32,7 @@ class App extends Component{
        }
 
        tiles[selectedTileIndex].selected = true
-       if(previousTileIndex != null){
+       if(previousTileIndex !== null){
          const preiviousTile = tiles[previousTileIndex]
          const selectedTile = tiles[selectedTileIndex]
 
