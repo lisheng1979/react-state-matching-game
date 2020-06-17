@@ -19,7 +19,7 @@ class App extends Component{
   }
 
    handleTileClicked = (id,color) => {
-     this.setState((state) => ({
+     this.setState((state) => {
        const tiles = state.tiles
        let toBeCleared = state.toBeCleared
        const selectedTileIndex = indexOfSelected(tiles,id,color)
@@ -48,7 +48,7 @@ class App extends Component{
          previousTileIndex = selectedTileIndex
        }
        return {toBeCleared, tiles, previousTileIndex}
-     }))
+     })
    }
 
    startGame = (numTiles) => {
