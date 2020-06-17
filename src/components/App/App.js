@@ -32,11 +32,12 @@ class App extends Component{
        }
 
        tiles[selectedTileIndex].selected = true
+
        if(previousTileIndex !== null){
-         const preiviousTile = tiles[previousTileIndex]
+         const previousTile = tiles[previousTileIndex]
          const selectedTile = tiles[selectedTileIndex]
 
-         if(preiviousTile.id !== selectedTile.id && preiviousTile.color === color){
+         if(previousTile.id !== selectedTile.id && previousTile.color === color){
            selectedTile.matched = true
            previousTile.matched = true
            previousTileIndex = null
