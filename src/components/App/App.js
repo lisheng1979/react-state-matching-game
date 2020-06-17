@@ -64,7 +64,7 @@ class App extends Component{
     this.setState({
       numTiles: num,
       playing: false,
-      tile: []
+      tiles: []
     })
    }
   render() {
