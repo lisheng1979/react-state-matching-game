@@ -5,7 +5,7 @@ const Button = (props) => (
   <GameContext.Consumer>
   {
     ({playing, startGame}) =>
-    <button onClick={startGame}>
+    <button onClick={props.startGame}>
     {
       props.playing ? 'reset' : 'start'
     }
