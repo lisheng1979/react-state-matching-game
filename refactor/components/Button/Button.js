@@ -5,11 +5,11 @@ const Button = (props) => (
   <GameContext.Consumer>
   {
     ({playing, startGame}) =>
-    <button onClick={props.startGame}>
-    {
-      props.playing ? 'reset' : 'start'
-    }
-    </button>
+      <button onClick={startGame}>
+      {
+        props.playing ? 'reset' : 'start'
+      }
+      </button>
   }
   </GameContext.Consumer>
 )
