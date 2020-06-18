@@ -8,7 +8,7 @@ const Button = (props) => (
     ({playing, startGame}) =>
       <button onClick={startGame}>
       {
-        playing ? 'reset' : 'start'
+        props.playing ? 'reset' : 'start'
       }
       </button>
   }
